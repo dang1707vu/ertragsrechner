@@ -1,0 +1,345 @@
+$warning: #3edc99;
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+//btn 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.btn-outline-warning {
+  --bs-btn-active-color: white;
+  --bs-btn-disabled-bg: red;
+}
+.btn {
+  --bs-btn-bg: 		#F2F4F4;
+}
+
+ul .btn {
+  --bs-btn-bg: 		white;
+}
+
+// .dir .button {
+//   border: none;
+//   background: transparent;
+// }
+
+
+
+
+.form-range::-webkit-slider-thumb {
+    background-color: #3edc99;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: blue;
+}
+
+.form-range {
+  min-width: 350px;
+  max-width: 425px;
+}
+.list-group {
+  min-width: 350px;
+  max-width: 425px;
+}
+
+.range-labels {
+  min-width: 350px;
+  max-width: 425px;
+}
+
+.range {
+  margin-top: -90px;
+}
+
+
+// .form-range::-webkit-slider-thumb:active {
+//     background-color: #fcb900;
+// }
+
+// .form-range::-webkit-slider-runnable-track {
+//     background-color: #fcb900;
+// }
+
+// .form-range::-moz-range-thumb:active {
+//     background-color: #fcb900;
+//   }
+
+// .form-range::-moz-range-track {
+//     background-color: #fcb900;
+// }
+
+
+
+// .angle-wrapper {
+//   position: relative;
+//   display: flex;
+//   height: 100%;
+//   bottom: -25px;
+//   margin-top: 185px;
+//   margin-left: 150px;
+//   transform: translate(-50%, -50%);
+//   width: 200px;
+//   height: 200px;
+// }
+
+//Compass
+  .circle-wrapper {
+    position: relative;
+    display: flex;
+    height: 100%;
+    margin-top: 165px;
+    left: 135px;
+  }
+  
+  .dot-container {
+    top: -75px;
+    left: -70px;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .dot {
+    left: 75px;
+    top: 75px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 2px;
+    border-radius: 100%;
+    color: red;
+    border: solid 2px;
+  }
+  
+  .sm-circle {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    color: #ECECEC;
+    border: solid 10px;
+    border-radius: 100%;
+    z-index: -1000;
+  }
+  
+  .lg-circle {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    color: #DBDBDB;
+    border: solid 20px;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: -100;
+  }
+
+  
+  .triangle-down {
+    transform-origin: bottom center;
+    position: absolute;
+    rotate: 0deg;
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 100px solid rgba(62, 220, 153, 0.7);
+    top: -100px;
+    left: -45px;
+    transition: .3s;
+    z-index: 1000;
+  }
+  
+  .dir {
+    display: flex;
+  }
+  
+  .N {
+    color: blue;
+    opacity: 0.75;
+    position: absolute;
+    margin-top: -115px;
+    margin-left: -5px;
+    background: white;
+    border: none;
+  }
+  
+  .S {
+    color: red;
+    opacity: 0.75;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: -5px;
+    background: white;
+    border: none;
+  }
+  
+  .O {
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 100px;
+    background: white;
+    border: none;
+  }
+  
+  .W {
+    position: absolute;
+    margin-top: -13px;
+    margin-left: -110px;
+    background: white;
+    border: none;
+  }
+  
+  .NO {
+    opacity: 0.75;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 65px;
+    background: white;
+    border: none;
+  }
+  
+  .SO {
+    opacity: 0.75;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 70px;
+    background: white;
+    border: none;
+  }
+  
+  .SW {
+    opacity: 0.75;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -90px;
+    background: white;
+    border: none;
+  }
+  
+  .NW {
+    opacity: 0.75;
+    position: absolute;
+    margin-top: -85px;
+    margin-left: -90px;
+    background: white;
+    border: none;
+  }
+
+
+
+
+  //Winkel
+  .angle-wrapper {
+    position: relative;
+    display: flex;
+    height: 100%;
+    bottom: -25px;
+    margin-top: 205px;
+    margin-left: 150px;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+  }
+  
+  .angle {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    background: #D7DBDD;
+    border: 6px solid black;
+    border-top-right-radius: 100%;
+    border-top-width: 10px;
+    border-right-width: 10px;
+    opacity: 0.1;
+  }
+
+  .angle-dir-wrapper {
+    transform-origin: bottom left;
+    position: absolute;
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    border-top-right-radius: 100%;
+    left: 10px;
+    top: -6px;
+    overflow: hidden;
+  }
+
+  .angle-dir-fade {
+    transform-origin: bottom left;
+    position: absolute;
+    background: #3edc99;
+    opacity: 0.4;
+    width: 163px;
+    height: 167px;
+    border-top-right-radius: 100%;
+    left: 6px;
+    top: 13px;
+    rotate: 90deg;
+    transition: 0.3s;
+  }
+  
+  .sun1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fcb900;
+    border-radius: 100%;
+    top: -4%;
+    left: 70%;
+    opacity: .08;
+  }
+  .sun2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fcb900;
+    border-radius: 100%;
+    top: 0%;
+    left: 75%;
+    opacity: .1;
+  }
+  
+  .sun-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #fcb900;
+    opacity: 0.7;
+    top: 5%;
+    left: 80%;
+    z-index: 1000;
+  }
+  
+  .angleDir {
+    transform-origin: bottom center;
+    position: absolute;
+    overflow: hidden;
+    height: 110px;
+    width: 7px;
+    background: #0d6efd;
+    top: 67px;
+    left: 7px;
+    border-radius: 50px;
+    rotate: 90deg;
+    transition: 0.3s;
+  }
+  
+  .Y {
+    position: absolute;
+    top: -30px;
+  }
+  
+  .X {
+    position: absolute;
+    top: 80%;
+    left: 100%;
+  }
+  
