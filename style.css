@@ -10791,6 +10791,8 @@ ul .btn {
 .cardKosten {
   width: 450px;
   height: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .kosten {
@@ -11256,6 +11258,23 @@ ul .btn {
 @media screen and (min-width: 576px) {
   .cardKosten {
     width: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .circle-wrapper {
+    margin-left: 45%;
+  }
+  .form-range {
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .list-group {
+    min-width: 500px;
+    max-width: 500px;
+  }
+  .range-labels {
+    min-width: 500px;
+    max-width: 500px;
   }
 }
 
