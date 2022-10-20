@@ -10776,6 +10776,11 @@ textarea.form-control-lg {
   font-family: "Poppins", sans-serif;
 }
 
+.btn-outline-warning {
+  --bs-btn-active-color: white;
+  --bs-btn-disabled-bg: red;
+}
+
 .btn {
   --bs-btn-bg:	#F2F4F4;
 }
