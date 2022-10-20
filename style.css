@@ -11300,5 +11300,10 @@ ul .btn {
     width: 500px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .cardKosten {
+    width: 550px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
