@@ -546,3 +546,22 @@ ul .btn {
       max-width: 500px;
     }
   }
+
+  @media screen and (min-width: 992px) {
+    .form-range {
+      min-width: 550px;
+      max-width: 550px;
+    }
+    .list-group {
+      min-width: 550px;
+      max-width: 550px;
+    }
+    
+    .range-labels {
+      min-width: 550px;
+      max-width: 550px;
+    }
+    .cardKosten {
+      width: 550px;
+    }
+  }
