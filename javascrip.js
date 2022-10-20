@@ -1,5 +1,14 @@
 let angle = document.querySelector('.angleDir');
 let rotate = getComputedStyle(angle).getPropertyValue('rotate');
+console.log(rotate);
+
+let rangeX = document.querySelector('#customRange2');
+let value = getComputedStyle(rangeX).getPropertyValue('min');
+
+
+console.log(value);
+
+
 
 
 //Photovoltaikleistung
@@ -9,6 +18,10 @@ function Modul1() {
 }
 function Modul2() {
     modul = 2;
+}
+
+function Modul4() {
+    modul = 4;
 }
 
 //Jahresstromverbrauch
@@ -136,12 +149,14 @@ var X = 180;
         calcWirkungsgrad75deg();
     }
     function deg90() {
+        r = 6;
         document.getElementById('customRange2').value = '6';
         // document.getElementsByClassName('angleDir').style.rotate = "0deg";
         document.getElementById('angle-dir-fade').style.rotate = "0deg";
         angle.style.setProperty('rotate', '0deg');
         calcWirkungsgrad90deg();
     }
+
 
     function calcWirkungsgradDir() {
         do {
@@ -245,12 +260,25 @@ function calcErzeugt(modul, wirkungsgrad) {
     if (leistungX > 760 && modul == 2) {
         leistungX = 760;
     }
+    if (leistungX > 1520 && modul == 4) {
+        leistungX = 1520;
+    }
     document.getElementById('erzeugt').innerHTML
     = leistungX + " kWh";
 }
 
 //Berechnung für Kosteneinsparung
 var ersparnisX = 109;
+function ersparnis4(modul, leistungX) {
+    var y;
+    y = leistungX / 4;
+    ersparnisX = (y * 0.33);
+    ersparnisX = ersparnisX * modul;
+    ersparnisX = Math.round(ersparnisX);
+    document.getElementById('kostenJahr').innerHTML
+    = ersparnisX + "€"
+}
+
 function ersparnis2(modul, leistungX) {
     var y;
     y = leistungX / 2;
@@ -273,6 +301,9 @@ function ersparnis(modul, leistungX) {
     }
     if (modul == 2) {
         ersparnis2(modul, leistungX);
+    }
+    if (modul == 4) {
+        ersparnis4(modul, leistungX);
     }
 }
 
