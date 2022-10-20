@@ -154,7 +154,7 @@ ul .btn {
     left: 100.2px;
     top: 99.95px;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
     width: 2px;
     border-radius: 100%;
     color: red;
@@ -203,6 +203,7 @@ ul .btn {
   
   .dir {
     display: flex;
+    position: relative;
   }
   
   .N {
