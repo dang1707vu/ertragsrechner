@@ -11304,6 +11304,21 @@ ul .btn {
   .cardKosten {
     width: 550px;
   }
+  .form-range {
+    min-width: 600px;
+    max-width: 600px;
+  }
+  .list-group {
+    min-width: 600px;
+    max-width: 600px;
+  }
+  .range-labels {
+    min-width: 600px;
+    max-width: 600px;
+  }
+  .cardKosten {
+    width: 550px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
