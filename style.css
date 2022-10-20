@@ -10778,7 +10778,6 @@ textarea.form-control-lg {
 
 .btn-outline-warning {
   --bs-btn-active-color: white;
-  --bs-btn-disabled-bg: red;
 }
 
 .btn {

@@ -107,7 +107,7 @@
                                 </div>
                             <div class="container">
                                 <div class="rangeNav1 col-10">
-                                    <input type="range" value="0" class="form-range" min="0" max="7" id="customRange">
+                                    <input type="range" value="0" class="form-range" min="0" max="7" id="customRange" oninput="getVal1(this.value)" onchange="getVal1(this.value)">
                                     <ul class="dirName list-group list-group-horizontal-md justify-content-center">
                                         <button id="N" class="btn text-muted" onclick="Nord(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)">N</button>
                                         <button id="NO" class="btn text-muted" onclick="NordO(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)">NO</button>
@@ -145,7 +145,7 @@
                                 <div class="col-10">
                                     <div class="range text-center">
                                         <label for="customRange2" class="form-label"></label>
-                                        <input type="range" value="0" class="form-range " min="0" max="6" id="customRange2">
+                                        <input type="range" value="0" class="form-range " min="0" max="6" id="customRange2" oninput="getVal2(this.value)" onchange="getVal2(this.value)">
                                     </div>
                                     <ul class="degName range-labels list-group list-group-horizontal-md justify-content-evenly">
                                         <button id="deg0" class="btn text-muted" onclick="deg0(), calcErzeugt(modul, wirkungsgrad)">0°</button>

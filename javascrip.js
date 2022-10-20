@@ -6,11 +6,6 @@ let rangeX = document.querySelector('#customRange2');
 let value = getComputedStyle(rangeX).getPropertyValue('min');
 
 
-console.log(value);
-
-
-
-
 //Photovoltaikleistung
  var modul = 1;
 function Modul1() {
@@ -307,6 +302,56 @@ function ersparnis(modul, leistungX) {
     }
 }
 
+function getVal1(newVal1) {
+    if (newVal1 == 0) {
+        Nord(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if (newVal1 == 1) {
+        NordO(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if (newVal1 == 2) {
+        Osten(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if (newVal1 == 3) {
+        SüdO(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if (newVal1 == 4) {
+        Süd(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if (newVal1 == 5) {
+        SüdW(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if (newVal1 == 6) {
+        W(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if (newVal1 == 7) {
+        NordW(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+}
+
+function getVal2(newVal2) {
+    if (newVal2 == 0) {
+        deg0(), calcErzeugt(modul, wirkungsgrad);
+    }
+    if(newVal2 == 1) {
+        deg15(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if(newVal2 == 2) {
+        deg30(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if(newVal2 == 3) {
+        deg45(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if(newVal2 == 4) {
+        deg60(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if(newVal2 == 5) {
+        deg75(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+    if(newVal2 == 6) {
+        deg90(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX);
+    }
+}
 
 // funktion bei neigung 15 = 
 // -0.000109289*X**2-0.105513*X+95.8462
