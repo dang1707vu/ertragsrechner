@@ -11253,4 +11253,10 @@ ul .btn {
   bottom: 0;
 }
 
+@media screen and (min-width: 576px) {
+  .cardKosten {
+    width: 500px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

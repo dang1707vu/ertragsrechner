@@ -520,6 +520,8 @@ ul .btn {
   }
 
 
-  // @media screen and () {
-    
-  // }
+  @media screen and (min-width: 576px) {
+    .cardKosten {
+      width: 500px;
+    }
+  }
