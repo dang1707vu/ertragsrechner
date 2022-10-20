@@ -10903,6 +10903,8 @@ ul .btn {
   top: 99.95px;
   transform: translate(-50%, -50%);
   position: relative;
+  height: 100%;
+  width: 100%;
   height: 2px;
   width: 2px;
   border-radius: 100%;
@@ -11238,15 +11240,42 @@ ul .btn {
     justify-content: center;
     text-align: center;
   }
-  .dot-container {
-    top: -100px;
-    left: -95px;
-    margin-left: 20px;
+  .slide {
+    background: gray;
+  }
+  #slider {
+    --webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    outline: none;
+    border-radius: 3px;
+  }
+  #slider::-webkit-slider-thumb {
+    --webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 3;
     position: relative;
-    height: 200px;
-    width: 200px;
+    color: #3edc99;
+  }
+  #selector {
+    height: 104px;
+    width: 48px;
+    position: absolute;
+    bottom: -57%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .SelectBtn {
+    height: 48px;
+    width: 48px;
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    overflow: hidden;
+    position: absolute;
+    bottom: 0;
   }
   .form-range {
     min-width: 315px;
