@@ -17,6 +17,15 @@ ul .btn {
   --bs-btn-bg: 		white;
 }
 
+.cardKosten {
+  width: 450px;
+  height: 360px;
+}
+
+.kosten {
+  margin-left: auto;
+  margin-right: auto;
+}
 // .dir .button {
 //   border: none;
 //   background: transparent;
@@ -31,17 +40,17 @@ ul .btn {
 }
 
 .form-range {
-  min-width: 500px;
-  max-width: 500px;
+  min-width: 425px;
+  max-width: 425px;
 }
 .list-group {
-  min-width: 500px;
-  max-width: 500px;
+  min-width: 425px;
+  max-width: 425px;
 }
 
 .range-labels {
-  min-width: 500px;
-  max-width: 500px;
+  min-width: 425px;
+  max-width: 425px;
 }
 
 .range {
@@ -89,6 +98,7 @@ ul .btn {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  margin-top: 15px;
 }
 
 #N {
@@ -137,7 +147,7 @@ ul .btn {
     height: 100%;
     margin-top: 165px;
     margin-bottom: -35px;
-    margin-left: 45%;
+    margin-left: 42%;
   }
   
   .dot-container {
@@ -298,6 +308,7 @@ ul .btn {
     background: darkcyan;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
   }
 
   #deg0 {
@@ -465,11 +476,6 @@ ul .btn {
     appearance: none;
   }
 
-
-
-
-
-
 .slide {
   background: gray;
 
@@ -512,3 +518,8 @@ ul .btn {
     position: absolute;
     bottom: 0;
   }
+
+
+  // @media screen and () {
+    
+  // }

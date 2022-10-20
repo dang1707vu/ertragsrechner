@@ -12,13 +12,13 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-10">
+        <div class="col-12 col-xxl-8">
             <div class="container text">
                 <div class="row">
-                    <div class="col-10">
+                    <div class="col col-xxl-12">
                         <section class="text">
                             <div class="container mt-5 text-center">
-                                <div class="col-10 offset-1">
+                                <div class="col-12">
                                     <h1 class="fw-bolder">Ertragsrechner</h1>
                                     <p class="text-muted" style="font-size: 21px;">
                                         Der Ertragsrechner verrät Dir, wie viel Strom Du produzierst bzw. selbst verbrauchst und wie Du Deine Kosteneinsparung durch die ideale Modul-Ausrichtung und optimierten Neigungswinkel maximierst. Viel Spaß!
@@ -32,7 +32,7 @@
                     
                     <section class="leistung">
                         <div class="container">
-                            <div class="col-10">
+                            <div class="col-12">
                                 <div class="text-center">
                                     <h5 class="bolder text-center mt-5">Photovoltaikleistung</h5>
                                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="width: 100%;">
@@ -52,7 +52,7 @@
                     
                     <section class="verbrauch">
                         <div class="container mt-5 pb-4">
-                            <div class="col-10">
+                            <div class="col-12">
                                 <div class="text-center">
                                     <h5 class="text-center">Jahresstromverbrauch</h5>
                                     <p class="text-muted text-center">Anzahl Personen im Haushalt</p>
@@ -82,7 +82,7 @@
             <div class="container cAusrichtung">
                         <section class="ausrichtung">
                             <div class="container mt-5">
-                                <div class="col-10">
+                                <div class="col-12">
                                     <h5 class="text-center">Modul-Ausrichtung (Himmelsrichtung)</h5>
                                     <div class="circle-wrapper">
                                     <ul class="dir">
@@ -106,7 +106,7 @@
                                 </div>
                                 </div>
                             <div class="container">
-                                <div class="rangeNav1 col-10">
+                                <div class="rangeNav1 col-12">
                                     <input type="range" value="0" class="form-range" min="0" max="7" id="customRange" oninput="getVal1(this.value)" onchange="getVal1(this.value)">
                                     <ul class="dirName list-group list-group-horizontal-md justify-content-center">
                                         <button id="N" class="btn text-muted" onclick="Nord(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)">N</button>
@@ -124,7 +124,7 @@
                         
                         <section class="neigung">
                             <div class="container mt-5">
-                                    <div class="col-10">
+                                    <div class="col-12">
                                         <h5 class="text-center pt-5">Neigungswinkel</h5>
                                         <div class="angle-wrapper">
                                             <div class="X text-muted">0°</div>
@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                             <div class="container mb-5">
-                                <div class="col-10">
+                                <div class="col-12">
                                     <div class="range text-center">
                                         <label for="customRange2" class="form-label"></label>
                                         <input type="range" value="0" class="form-range " min="0" max="6" id="customRange2" oninput="getVal2(this.value)" onchange="getVal2(this.value)">
@@ -163,11 +163,11 @@
             
         </div>
         <div class="col-1">
-            <section class="kosten mt-5 sticky-top">
-                <div class="container">
+            <section class="mt-5 sticky-top">
+                <div class="container kosten">
                     <div class="col-12">
-                        <div class="card cardKosten rounded-4 mb-5 bg-dark text-white ps-4 pt-4 " style="width: 500px; height: 360px;">
-                            <div class="kosten text-center me-5 border-bottom">
+                        <div class="card cardKosten rounded-4 mb-5 bg-dark text-white ps-4 pt-4 ">
+                            <div class="text-center me-5 border-bottom">
                                 <h5>DEINE KOSTENEINSPARUNG</h5>
                                 <h1 class="fw-bolder" style="color: #3edc99; font-size: 50px;"><span id="kostenJahr">109€</span><small style="font-size: 25px;">/Jahr</small></h1>
                             </div>
