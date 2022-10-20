@@ -468,19 +468,12 @@ ul .btn {
     appearance: none;
   }
 
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 390px) {
     .containerX {
       margin-left: -7px;
       width: 385px;
     }
 
-    body {
-      max-width: 100%;
-      overflow-x: hidden;
-      display: flex;
-      justify-content: center;
-    }
-    
     .dot {
       left: 100.2px;
       top: 99.95px;
@@ -500,11 +493,12 @@ ul .btn {
       width: 330px;
       height: 390px;
       display: flex;
+      margin-left: -65px;
     }
     .circle-wrapper {
     position: absolute;
     width: 252px;
-    height: 100%;
+    height: 100px;
     margin-top: 165px;
     margin-bottom: -35px;
     display: flex;
@@ -523,17 +517,17 @@ ul .btn {
     overflow: hidden;
   }
     .form-range {
-      min-width: 335px;
-      max-width: 335px;
+      min-width: 315px;
+      max-width: 315px;
     }
     .list-group {
-      min-width: 335px;
-      max-width: 335px;
+      min-width: 315px;
+      max-width: 315px;
     }
     
     .range-labels {
-      min-width: 335px;
-      max-width: 335px;
+      min-width: 315px;
+      max-width: 315px;
     }
 
     .dirName {
@@ -550,12 +544,19 @@ ul .btn {
     }
 
     .cardKosten {
-      width: 365px;
+      width: 361px;
     }
     .img {
       margin-left: -20px
     }
   }
+
+  @media screen and (min-width: 391px) {
+    .cardKosten {
+      width: 450px;
+    }
+  }
+
 
   @media screen and (min-width: 576px) {
     .cardKosten {
