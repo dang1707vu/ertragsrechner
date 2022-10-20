@@ -167,8 +167,6 @@ ul .btn {
     top: 99.95px;
     transform: translate(-50%, -50%);
     position: relative;
-    height: 100%;
-    width: 100%;
     height: 2px;
     width: 2px;
     border-radius: 100%;
@@ -470,57 +468,86 @@ ul .btn {
     appearance: none;
   }
 
-  .form-range {
-    width: 100%;
-    height: 1.5rem;
-    padding: 0;
-    background-color: transparent;
-    appearance: none;
-  }
+  @media screen and (max-width: 575px) {
 
-.slide {
-  background: gray;
 
-}
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .dot {
+      left: 100.2px;
+      top: 99.95px;
+      transform: translate(-50%, -50%);
+      position: relative;
+      height: 2px;
+      width: 2px;
+      border-radius: 100%;
+      color: red;
+      border: solid 2px;
+    }
 
-  #slider {
-    --webkit-appearance: none;
-    width: 100%;
-    height: 7px;
-    outline: none;
-    border-radius: 3px;
-  }
-
-  #slider::-webkit-slider-thumb {
-    --webkit-appearance: none;
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    z-index: 3;
+    .dir {
+      left: 20px;
+    }
+    .circle-wrapper {
     position: relative;
-    color: #3edc99;
+    width: 390px;
+    height: 100%;
+    margin-top: 165px;
+    margin-bottom: -35px;
+    display: flex;
+    justify-content: start;
+    right: 20px;
   }
-
-  #selector {
-    height: 104px;
-    width: 48px;
-    position: absolute;
-    bottom: -57%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-  }
-
-  .SelectBtn {
-    height: 48px;
-    width: 48px;
-    background-size: cover;
-    background-position: center;
+  
+  .dot-container {
+    top: -100px;
+    left: -95px;
+    margin-left: 20px;
+    position: relative;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    position: absolute;
-    bottom: 0;
+    overflow: hidden;
   }
+    .form-range {
+      min-width: 335px;
+      max-width: 335px;
+    }
+    .list-group {
+      min-width: 335px;
+      max-width: 335px;
+    }
+    
+    .range-labels {
+      min-width: 335px;
+      max-width: 335px;
+    }
 
+    .dirName {
+      left: -20px;
+    }
+    .dirRange {
+      margin-left: -10px;
+    }
+    .degName {
+      left: -20px;
+    }
+    .degRange {
+      margin-left: -5px;
+    }
+
+    .cardKosten {
+      width: 370px;
+    }
+    .img {
+      margin-left: -20px
+    }
+  }
 
   @media screen and (min-width: 576px) {
     .cardKosten {
