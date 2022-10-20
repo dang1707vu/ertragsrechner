@@ -1,5 +1,6 @@
 let angle = document.querySelector('.angleDir');
 let rotate = getComputedStyle(angle).getPropertyValue('rotate');
+console.log(rotate);
 
 let rangeX = document.querySelector('#customRange2');
 let value = getComputedStyle(rangeX).getPropertyValue('min');

@@ -37,13 +37,13 @@
                                     <h5 class="bolder text-center mt-5">Photovoltaikleistung</h5>
                                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group" style="width: 100%;">
                                         <input type="radio" class="btn-check" name="btnradio" onclick="Modul1(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)" id="btnradio1" autocomplete="off"  checked>
-                                        <label class="btn btn-outline-warning border-0 border-end fw-bolder" for="btnradio1">1 MODUL</label>
+                                        <label class="btn btn-outline-warning border-white fw-bolder" for="btnradio1">1 MODUL</label>
                                     
                                         <input type="radio" class="btn-check" name="btnradio" onclick="Modul2(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)" id="btnradio2" autocomplete="off">
-                                        <label class="btn btn-outline-warning border-0 border-end border-start fw-bolder" for="btnradio2">2 MODULE</label>
+                                        <label class="btn btn-outline-warning border-white fw-bolder" for="btnradio2">2 MODULE</label>
             
                                         <input type="radio" class="btn-check" name="btnradio" onclick="Modul4(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)" id="btnradio3" autocomplete="off">
-                                        <label class="btn btn-outline-warning border-0 border-start fw-bolder" for="btnradio3">4 MODULE</label>
+                                        <label class="btn btn-outline-warning border-white fw-bolder" for="btnradio3">4 MODULE</label>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@
                                 </div>
                             <div class="container">
                                 <div class="rangeNav1 col-12 col-xl-10">
-                                    <input type="range" value="0" class="form-range dirRange" min="0" max="7" id="customRange" oninput="getVal1(this.value)" onchange="getVal1(this.value)">
+                                    <input type="range" value="0" class="form-range" min="0" max="7" id="customRange" oninput="getVal1(this.value)" onchange="getVal1(this.value)">
                                     <ul class="dirName list-group list-group-horizontal-md justify-content-center">
                                         <button id="N" class="btn text-muted" onclick="Nord(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)">N</button>
                                         <button id="NO" class="btn text-muted" onclick="NordO(), calcErzeugt(modul, wirkungsgrad), ersparnis(modul, leistungX)">NO</button>
@@ -145,9 +145,9 @@
                                 </div>
                             <div class="container mb-5">
                                 <div class="col-12 col-xl-10">
-                                    <div class="range degRange text-center">
+                                    <div class="range text-center">
                                         <label for="customRange2" class="form-label"></label>
-                                        <input type="range" value="0" class="form-range degRange" min="0" max="6" id="customRange2" oninput="getVal2(this.value)" onchange="getVal2(this.value)">
+                                        <input type="range" value="0" class="form-range " min="0" max="6" id="customRange2" oninput="getVal2(this.value)" onchange="getVal2(this.value)">
                                     </div>
                                     <ul class="degName range-labels list-group list-group-horizontal-md justify-content-evenly">
                                         <button id="deg0" class="btn text-muted" onclick="deg0(), calcErzeugt(modul, wirkungsgrad)">0°</button>
@@ -185,7 +185,7 @@
                                             </div>
                                         </div>
                                         </div>
-                                    <div class="col-4 mt-4 img">
+                                    <div class="col-4 mt-4">
                                         <img src="./images/calculator.webp" style="width: 105px; height: 140px;">
                                     </div>
                                 </div>
