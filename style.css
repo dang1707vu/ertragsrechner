@@ -10793,7 +10793,7 @@ ul .btn {
 }
 
 .form-range::-moz-range-thumb {
-  background-color: blue;
+  background-color: #3edc99;
 }
 
 .form-range {
