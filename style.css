@@ -10776,22 +10776,12 @@ textarea.form-control-lg {
   font-family: "Poppins", sans-serif;
 }
 
-.btn-outline-warning {
-  --bs-btn-active-color: white;
-  --bs-btn-disabled-bg: red;
-}
-
 .btn {
   --bs-btn-bg:	#F2F4F4;
 }
 
 ul .btn {
   --bs-btn-bg:	white;
-}
-
-.form-range::-moz-range-track {
-  background: red;
-  color: red;
 }
 
 .form-range::-webkit-slider-thumb {
